@@ -3,7 +3,7 @@
      
 <view class='swiper-box'>
       <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
-        <block wx:for="{{imgUrls}}">
+        <block wx:for="{{imgUrls}}" wx:key="key">
           <swiper-item>
             <image src="{{item}}" class="slide-image" />
           </swiper-item>
@@ -25,8 +25,10 @@
     <view class="content_content">
       <view class="content_ctop">
         <view class="content_ctop_con">
-          <view></view>
-          <text>碉堡里的老九</text>
+          <view>
+           <image class="userinfo-avatar" src="{{userdata.avatarUrl}}" mode="cover"></image>
+          </view>
+          <text>{{userdata.nickName}}</text>
           <text id='x{{status}}'bindtap="goaut">
           {{type}}
           </text>

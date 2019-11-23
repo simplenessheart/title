@@ -70,7 +70,6 @@ page{
   overflow: hidden;
   width: 50rpx;
   height: 50rpx;
-  background: red;
   border-radius: 50%;
   margin-top: 10rpx;
   /* line-height: 50rpx; */
@@ -241,4 +240,8 @@ swiper image {
 }
 .slide-image{
   height: 240px;
+}
+.userinfo-avatar{
+  width: 50rpx;
+  height: 50rpx;
 }

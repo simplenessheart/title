@@ -32,8 +32,7 @@ Page({
           itemData && this.setData({ itemData })
         } else {
           console.log('点击取消回调')
-          let itemData = App.Touches.touchE(e, this.data.itemData, this.data.startX, width)
-          itemData && this.setData({ itemData })
+             
         }
       }
     })

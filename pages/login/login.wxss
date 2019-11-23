@@ -1,0 +1,52 @@
+/* pages/login/login.wxss */
+.top{
+  width: 96%;
+  height: 400rpx;
+  /* background: red; */
+  border-bottom: 1px #DAD8DB solid;
+  margin: 0 auto;
+}
+.top>image{
+  display: block;
+  width: 270rpx;
+  height: 270rpx;
+  margin: 0 auto;
+  padding-top:98rpx;
+}
+.usertext{
+  width: 96%;
+  margin: 30rpx auto;
+}
+.usertext>text{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-indent: 10rpx;
+  display: inline-blockl;
+  float: left;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+}
+.usertext>text:nth-of-type(2){
+  color: #9F9C9F;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 100rpx;
+}
+
+.footer{
+  width: 92%;
+  height: 100rpx;
+  margin: 0rpx auto;
+  
+}
+.footer>button{
+  width: 100%;
+  height: 90rpx;
+  background-color: #1BAE19;
+  color: white;
+  font-size: 34rpx;
+  line-height: 62rpx;
+  font-weight: normal;
+  border-radius: 40rpx;
+}

@@ -1,10 +1,10 @@
 <view class='my_nav'>
     <view class=" nav_top nav_user" bindtap="gotouser">
           <view>
-            <image src="../images/me.png" mode="aspectFit"></image>
+            <image src="{{userdata.avatarUrl}}" mode="aspectFit"></image>
           </view>
           <view>
-            <text>碉堡里的老九</text>
+            <text>{{userdata.nickName}}</text>
             <text>专线用户</text>
           </view>
           <view>

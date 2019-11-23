@@ -1,21 +1,21 @@
 {
   "pages": [
-      "pages/index/index",
+    "pages/login/login",
+    "pages/index/index",
     "pages/journey/journey",
- 
     "pages/attestation/attestation",
     "pages/my/my",
     "pages/att_three/att_three",
     "pages/out_money/out_money",
     "pages/record/record",
     "pages/out_definite/out_definite",
-    "pages/about/about",    
+    "pages/about/about",
     "pages/tel/tel",
     "pages/user/user",
     "pages/att_two/att_two",
     "pages/logs/logs",
     "pages/hall/hall",
-     "pages/details/details",
+    "pages/details/details",
     "pages/advertising/advertising",
     "pages/indent/indent"
   ],

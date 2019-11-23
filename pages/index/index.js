@@ -1,4 +1,5 @@
 //index.js
+import { userDetail } from '../../utils/authority.js'
 //获取应用实例
 const app = getApp()
 
@@ -16,8 +17,8 @@ Page({
     swiperCurrent: 0,
     type:'',
     status:2,
-    userclass:1
-
+    userclass:1,
+    userdata:app.data.user
   },
   onShareAppMessage() {
     return {
@@ -48,6 +49,12 @@ Page({
     })
   },
   onLoad: function () {
+    // console.log(app.data)
+    this.setData({
+      userdata:app.data.user
+    })
+    console.log(this.data.userdata)
+    this.getUserDetail()
 
     if (this.data.status == 1) {
       this.setData({
@@ -96,6 +103,20 @@ Page({
         }
       })
     }
+  },
+  getUserDetail:function(data){
+    userDetail(data).then(response => {
+      console.log(response)
+      if (response.data.code == 200) {
+
+      } else {
+        wx.showToast({
+          title: '纯文字弹窗',
+          icon: 'none',    //如果要纯文本，不要icon，将值设为'none'
+          duration: 2000
+        }) 
+      }
+    })
   },
   getUserInfo: function(e) {
     console.log(e)
