@@ -1,0 +1,113 @@
+<!--pages/indent/indent.wxml-->
+<view class="body">
+    <view class="zhanwei">
+    
+    </view>
+    <view class="content" wx:for="{{number}}" wx:key = "{{item.id}}">
+        <view class="small_con">
+            <view class="con_left">
+                {{item.name}}
+            </view>
+            <view class="con_right">
+                {{item.value}}
+            </view>
+        </view>
+    </view>
+    <view class="content">
+        <view class="small_con">
+            <view class="cont_left">
+                出发:
+            </view>
+            <view class="con_right">
+                
+            </view>
+        </view>
+    </view>
+    <view class="content">
+        <view class="small_con">
+            <view class="cont_left">
+                出发地点
+            </view>
+            <view class="cont_right">
+               <text>北京市房山区长阳农场家属院</text>   
+                <image src="../images/u1272.svg"></image>
+            </view>
+        </view>
+    </view>
+     <view class="content">
+        <view class="small_con">
+            <view class="cont_left">
+                当前里程
+            </view>
+            <view class="cont_right">
+               <text>2000</text>   
+            </view>
+        </view>
+    </view>
+    <view class="photo">
+        <view class="photo_left">
+            <view class="photo_top">
+                上传照片
+            </view>
+            <view class="photo_bottom">
+                点击上传照片
+            </view>
+        </view>
+        <view class="photo_right">
+            <image src="../images/left.png"></image>
+        </view>
+    </view>
+    <view class="flag" wx:if = "{{status !== 0}}">
+        <view class="content">
+        <view class="small_con">
+            <view class="cont_left">
+              到达:
+            </view>
+            <view class="con_right">
+                
+            </view>
+        </view>
+    </view>
+    <view class="content">
+        <view class="small_con">
+            <view class="cont_left">
+                出发地点
+            </view>
+            <view class="cont_right">
+               <text>北京市房山区长阳农场家属院</text>   
+                <image src="../images/u1272.svg"></image>
+            </view>
+        </view>
+    </view>
+     <view class="content">
+        <view class="small_con">
+            <view class="cont_left">
+                当前里程
+            </view>
+            <view class="cont_right">
+               <text>请输入仪表盘上的里程数</text>   
+            </view>
+        </view>
+    </view>
+    <view class="photo">
+        <view class="photo_left">
+            <view class="photo_top">
+                上传照片
+            </view>
+            <view class="photo_bottom">
+                点击上传照片
+            </view>
+        </view>
+        <view class="photo_right">
+            <image src="../images/left.png"></image>
+        </view>
+    </view>
+    </view>
+    
+    <view class="box">
+       <view class="submit">
+        提交
+      </view>
+    </view>
+   
+</view>

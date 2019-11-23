@@ -1,0 +1,25 @@
+<view class='top'>
+   <view class="top_con">
+   <image src="../images/top02.png"></image>
+        <!-- <view></view>
+        <text></text>
+        <view></view>
+        <text></text>
+        <view></view> -->
+    </view>
+</view>
+<view class="title">上传驾驶证</view>
+<view class="content">
+    <view class="con_left">
+      <image src="../images/photo.png" mode="aspectFit"></image>
+    </view>
+    <view class="con_right">
+     <image src="../images/photo.png" mode="aspectFit"></image>
+    </view>
+    <text>驾驶证正页</text>
+    <text>驾驶证副页</text>
+</view>
+<view class="footer">
+  <view bindtap="goone">上一步</view>
+  <view bindtap="gotothree">下一步</view>
+</view>

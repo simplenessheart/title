@@ -1,0 +1,11 @@
+<view class='con'>
+  <view>
+    <text>奇点车助理</text>
+    <text>V 0.0.5</text>
+      <image src="../images/ma.png" mode="aspectFit"></image>
+  </view>
+  <view class="lian">
+  <button>联系我们</button>
+
+    </view>
+</view>

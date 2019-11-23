@@ -1,0 +1,21 @@
+<view class='top'>
+  <view>
+    <text>当前余额 (元)</text>
+    <text>{{money}}</text>
+  </view>
+</view>
+<view class="con">
+  <view class="con_top">
+    <text>提现金额：</text>
+    <text bindtap="gotoming">明细</text>
+  </view>
+  <view class="con_con">
+      <view>￥</view>
+      <input class="weui-input" type="number" placeholder="金额" value="{{outallmoney}}"/>
+      <text>每个月只能提现一次。提现到账日期2～5个工作日。 </text>
+      <text bindtap="outallmoney">全部提现</text>
+  </view>
+</view>
+<view class="footer">
+<button>确认提现</button>
+</view>

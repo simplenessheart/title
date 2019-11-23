@@ -1,0 +1,30 @@
+{
+  "pages": [
+      "pages/index/index",
+    "pages/journey/journey",
+ 
+    "pages/attestation/attestation",
+    "pages/my/my",
+    "pages/att_three/att_three",
+    "pages/out_money/out_money",
+    "pages/record/record",
+    "pages/out_definite/out_definite",
+    "pages/about/about",    
+    "pages/tel/tel",
+    "pages/user/user",
+    "pages/att_two/att_two",
+    "pages/logs/logs",
+    "pages/hall/hall",
+     "pages/details/details",
+    "pages/advertising/advertising",
+    "pages/indent/indent"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "奇点车贴",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

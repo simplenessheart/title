@@ -1,0 +1,42 @@
+page{
+background: #F2F2F2;
+}
+.con{
+  width: 96%;
+  height: 200rpx;
+  border-bottom: 1px #D7D7D7 solid;
+  margin: 0 auto;
+  background: white;
+  margin-top: 30rpx;
+}
+.con>view{
+  width: 500rpx;
+  float: left;
+}
+.con>view>text{
+  display: inline-block;
+  width: 500rpx;
+  font-size: 40rpx;
+  font-weight:bold;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+.con>view>text:nth-of-type(2){
+  font-size: 28rpx;
+  font-weight: normal;
+margin-top: 20rpx;
+}
+.con>text{
+  display: inline-block;
+  width: 120rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+  float: right;
+  margin-right: 30rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #E6BD2E;
+}
+.two{
+  margin-top: 0rpx;
+}

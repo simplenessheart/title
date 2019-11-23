@@ -1,0 +1,47 @@
+<!--pages/Hall/Hall.wxml-->
+<view class="body">
+    <view class="c_box">
+
+    </view>
+    <view class="content_1" bindtap="jump" wx:for="{{arr}}" wx:key="{{arr.name}}">
+        <view class="content_con">
+            <view class="con_small">
+                <view class="con_pic">
+                    <image src="../images/weizhi.png" mode="aspectFit"></image>
+                </view>
+                <view class="con_text">
+                    <view class="headline">
+                        {{item.name}}
+                    </view>
+                    <view class="period">
+                        周期： 60天
+                    </view>
+                    <view class="reward">
+                        酬金： 500  元/周期
+                    </view>
+                </view>
+                <view class="con_list">
+                   <view>
+                      <image src="../images/left.png">
+
+                      </image>
+                   </view>
+                </view>
+            </view>
+        </view>
+        <view class="bottom">
+            <view class="bot_left">
+                <image src="../images/biao.png">
+                
+                </image>
+                <view class="nowIng">
+                    进行中
+                </view>
+            </view>
+             <view class="bot_right">
+                截止日期：2019-06-11
+            </view>
+        </view>
+    </view>
+   
+</view>

@@ -1,0 +1,64 @@
+<view id='top'>
+  <view class="top">
+     
+<view class='swiper-box'>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+        <view class="dots"> 
+          <block wx:for="{{imgUrls}}" wx:key="unique"> 
+            <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view> 
+      </block> 
+    </view>
+  </view>
+  </view>
+</view>
+ <view id="content">
+    <view class="content_top">
+      <text>发布形成 赚取佣金</text>
+      <view bindtap="gotohall">赚取佣金</view>
+    </view>
+    <view class="content_content">
+      <view class="content_ctop">
+        <view class="content_ctop_con">
+          <view></view>
+          <text>碉堡里的老九</text>
+          <text id='x{{status}}'bindtap="goaut">
+          {{type}}
+          </text>
+            <image src="../images/left.png" class="la"></image>
+        </view>
+      </view>
+      <view class="content_left">
+        <text>账户余额</text>
+        <text>0元</text>
+        <view bindtap="gotoout_money">提现</view>
+      </view>
+      <view class="content_right">
+        <view>本月指标：
+          <text>0 笔</text>
+        </view>
+        <view>本月指标完成度：
+          <text>0 笔</text>
+        </view>
+      </view>
+    </view>
+</view>
+ <view class="footernav">
+            <view>
+                 <image src='../images/publish.png'></image>
+                 <text>发布</text>
+             </view>
+             <view bindtap="gotoindent">
+                 <image src='../images/stroke.png'></image>
+                 <text>行程</text>
+             </view>
+             <view bindtap="gotomy">
+                 <image src='../images/me.png'></image>
+                 <text>我的</text>
+             </view>
+        </view>

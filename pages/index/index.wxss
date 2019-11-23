@@ -1,0 +1,244 @@
+page{
+  background: #F2F2F2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#top{
+  width: 100%;
+  height: 240px;
+  /* position: absolute; */
+  /* z-index: 1; */
+}
+#content{
+  width: 100%;
+  height: 600rpx;
+  background: #F2F2F2;
+  position: relative;
+  top:-27px;
+  border-radius:50px 50px 0 0;
+  /* z-index: 9999; */
+}
+.content_top{
+  width: 80%;
+  height: 240rpx;
+  background: white;
+  margin:0 auto;
+  position: relative;
+  top:-70rpx;
+  border-radius: 20px;
+}
+.content_top>text{
+  display: inline-block;
+  font-weight: bold;
+  width: 100%;
+  /* height: 24rpx; */
+  margin: 50rpx auto;
+  text-align: center;
+}
+.content_top>view{
+  width: 300rpx;
+  height: 50rpx;  
+  background: #169BD5;
+  color: white;
+  margin: 0 auto;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.content_content{
+  width: 96%;
+  height: 402rpx;
+  background: white;
+  margin: 0 auto;
+  margin-top: -30rpx;
+}
+.content_ctop{
+  width: 100%;
+  height: 70rpx;
+  border-bottom: 1px #ddd solid;
+  margin: 0 auto;
+}
+.content_ctop_con{
+  width: 96%;
+  height: 69rpx;
+  margin-left: 14rpx;
+}
+.content_ctop_con>view{
+  float: left;
+  overflow: hidden;
+  width: 50rpx;
+  height: 50rpx;
+  background: red;
+  border-radius: 50%;
+  margin-top: 10rpx;
+  /* line-height: 50rpx; */
+}
+.content_ctop_con>text{
+  font-size: 26rpx;
+}
+#x3{
+  color: #02A7F0;
+}
+.la{
+  width: 30rpx;
+  height: 36rpx;
+  float: right;
+  margin-right: -116rpx;
+  margin-top: 18rpx;
+}
+.content_ctop_con>text:nth-of-type(1){
+  line-height: 70rpx;
+
+    float: left;
+    display: block;
+    color: black;
+    margin-left: 20rpx;
+}
+.content_ctop_con>text:nth-of-type(2){
+    float: right;
+    display: block;
+    color: #979797;
+    margin-right: 32rpx;
+    font-size: 26rpx;
+    line-height: 24rpx;
+}
+.content_left{
+  width: 50%;
+  height: 300rpx;
+  border-right: 1px #ddd solid;
+  float: left;
+  margin-top: 14rpx;
+}
+.content_right{
+  width: 49%;
+  height: 300rpx;
+  float: left;
+  margin-top: 14rpx;
+
+}
+.content_left>text:nth-of-type(1){
+
+  font-size: 26rpx;
+  font-weight: bold;
+  margin-top: 30rpx;
+  color: #BCBCBC;
+/* font-family:'微软雅黑'; */
+}
+.content_left>text{
+  color: #AEAEAE;
+  font-size: 22rpx;
+  display:inline-block;
+    width:100%;
+    line-height: 60rpx;
+    text-align: center;
+}
+.content_left>view{
+  color: #BCBCBC;
+
+  width:100rpx;
+  height: 30rpx;
+  border-radius: 10rpx;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  border: 1px #ddd solid;
+  text-align: center;
+  margin: 30rpx auto;
+  padding: 5rpx;
+}
+.content_right>view:nth-of-type(2){
+  border: none;
+}
+.content_right>view{
+  color: #AEAEAE;
+  width: 96%;
+  height: 149rpx;
+  border-bottom: 1px #ddd solid;
+  line-height: 67rpx;
+  text-indent: 14rpx;
+  font-size: 22rpx;
+}
+.content_right>view>text{
+  color: #AEAEAE;
+
+  display: inline-block;
+  width: 100%;
+  text-indent: 70rpx;
+}
+/* #footer{
+  width: 100%;
+}
+.footer{
+  width: 96%;
+  height: 200rpx;
+  background: white;
+  margin:  0 auto;
+  margin-top: -84rpx;
+}
+.footer>view{
+  width: 
+  display: block;
+} */
+.footernav{
+    width:96%;
+    height:91px;
+    background:white;
+    margin: 0 auto;
+    display:flex;
+    /* margin-top:-60rpx;
+     */
+    position: relative;
+    top: -13px;
+}
+.footernav>view{
+   flex:1;
+   text-align:center;
+   padding-top:10px;
+}
+.footernav>view image{ 
+   width:25px;
+   height: 25px;
+}
+.footernav>view text{ 
+   display:block
+}
+swiper{
+  width: 96%;
+  height: 240px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.swiper-box{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.dots{ 
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  bottom: 136rpx; 
+  display: flex; 
+  justify-content: center; 
+} 
+.dots .dot{ 
+  margin: 0 8rpx; 
+  width:15rpx; 
+  height:15rpx; 
+  background: #fff; 
+  border-radius: 8rpx; 
+  transition: all .6s; 
+} 
+.dots .dot.active{ 
+  box-sizing: border-box;
+  width: 24rpx; 
+border: 1px #ddd solid;
+}
+swiper image {
+  width: 100%;
+  height: 212px;
+}
+.slide-image{
+  height: 240px;
+}

@@ -1,0 +1,48 @@
+<view class='top'>
+   <view class="top_con">
+      <image src="../images/top01.png"></image>
+    </view>
+</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="con_one">
+      <view class="tel">手机号码 </view>
+      <view class="tel_ma">
+          <text>手机号码</text> 
+        <input class="weui-input" type="number"placeholder="点击获取手机号码"name="tel" />
+        <view>获取手机号码</view>
+      </view>
+      <view class="user">
+        <image src="../images/wen.png"></image>
+        <text>里程用户</text>
+         <switch checked="{{switch1Checked}}" bindchange="switch1Change" color='#008CF8' style='zoom:.9;'/>
+    </view>
+</view>
+<view class="con_two">
+    <view>居住地信息</view>
+    <view>居住地址</view>
+    <view>
+    <text>详细地址</text>
+       <input class="weui-input"  maxlength="10" placeholder="请输入详细地址" name="address"/>
+    </view>
+</view>
+<view class="con_two" wx:if="{{flag}}">
+    <view>行程A</view>
+    <view>居住地址</view>
+    <view>
+    <text>详细地址</text>
+       <input class="weui-input"  maxlength="10" placeholder="请输入详细地址" name="address1"/>
+    </view>
+</view>
+<view class="con_two" wx:if="{{flag}}">
+    <view>行程B</view>
+    <view>居住地址</view>
+    <view>
+    <text>详细地址</text>
+       <input class="weui-input"  maxlength="10" placeholder="请输入详细地址" name="address2"/>
+    </view>
+</view>
+
+<view class="footer">
+  <button form-type="submit">下一步</button>
+</view>
+</form>

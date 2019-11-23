@@ -1,0 +1,204 @@
+<!--pages/details/details.wxml-->
+<view class="body">
+  <view class="body_a"> 
+  </view>
+    <view class="banner">
+    <view class='swiper-box'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+    <block wx:for="{{imgUrls}}">
+    <swiper-item>
+    <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+    </block>
+    </swiper>
+    <view class="dots"> 
+    <block wx:for="{{imgUrls}}" wx:key="unique"> 
+    <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view> 
+    </block> 
+    </view>
+  </view>
+  </view>
+  <view class="title">
+      <view class="title_text"> 
+          广告标题
+      </view>
+      <view class="title_small">
+          <view class="title_ss">
+              金额：
+          </view>
+          <view class="nav">
+              <text style="color:#33CC00">500 元</text>
+          </view>
+      </view>
+      <view class="title_small">
+          <view class="title_ss">
+             投放天数：
+          </view>
+          <view class="nav">
+             60天
+          </view>
+      </view>
+      <view class="title_small">
+          <view class="title_ss">
+             广告有效期：
+          </view>
+          <view class="nav">
+             2019-06-01 至  2019-06-30
+          </view>
+      </view>
+       <view class="title_small">
+          <view class="title_ss">
+             张贴位置：
+          </view>
+          <view class="nav">
+             左右两侧车门
+          </view>
+      </view>
+  </view>
+  <view class="introduction">
+      <view class="line">
+          <view class="about">
+              广告简介:
+          </view>
+      </view>
+      <view class="in_con">
+          <text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+          </text>
+      </view>
+  </view>
+  <view class="manner">
+      <view class="man_line1">
+          <view class="man_tit">
+              张贴方式:
+          </view>
+          <view class="man_btn">
+              <view class="man_btt">
+                  <view class="{{id == 0 ? 'btn3' : 'btn1'}}" bindtap="put" data-idx="0">
+                      张贴点安装
+                  </view>
+                   <view class="{{id == 1 ? 'btn3' : 'btn1'}}" bindtap="offline" data-idx="1">
+                      线下邮寄
+                  </view>
+              </view>
+             
+          </view>
+      </view>
+  </view>
+  <view class="flag" wx:if="{{id == 0}}">
+       <view class="address">
+            张贴地址：
+        </view>
+        <view class="flag_cont">
+            <view class="flag_time">
+                <view class="icon">
+                    <image src="../images/u1000.svg" mode="aspectFit"></image>
+                </view>
+                <view class="flag_text">
+                    服务时间：9：00  -  18：00
+                </view>
+            </view>
+             <view class="flag_time">
+                <view class="icon">
+                    <image src="../images/u999.svg" mode="aspectFit"></image>
+                </view>
+                <view class="flag_text">
+                    联系电话：17896001991
+                </view>
+            </view>
+             <view class="flag_time">
+                <view class="icon">
+                    <image src="../images/u1001.svg" mode="aspectFit"></image>
+                </view>
+                <view class="flag_text">
+                    张贴地址：北京市房山区长阳镇长阳地址站A口
+                </view>
+            </view>
+        </view>
+  </view>
+   <view class="textarie" wx:if = "{{id == 1}}" bindtap="submit">
+  
+  </view>
+  <view class="zhanwei">
+  
+  </view>
+  <view class="font">
+      分享成功后，如果有好友参与并且好友成功张贴广告。即可获得5元奖励
+  </view>
+  <view class="bottom">
+  <view class="bot_left">
+    <view class="time">
+        <image src="../images/biao.png"></image>
+     </view>
+     <view class="bot_text">
+        报名中
+     </view>
+  </view>
+  <view class="bot_right">
+     <view class="bot_btn1">
+        分享
+     </view>
+     <view class="bot_btn2">
+        立即领取
+     </view>
+  </view>
+  </view>
+</view>
+<view class="mask" catchtouchmove='preventTouchMove' wx:if='{{showModal}}'>
+      <view class="close">
+          <image src="../images/u986.svg"  bindtap="close" wx:if = '{{showModal}}'></image>
+      </view>
+      <view class="massage">
+         <form  bindsubmit="formSubmit" bindreset="formReset">
+            <view class="messa">
+              <view class="relation">
+                 <view class="rel_text">收件人</view>
+                  <view class="rel_inp">
+                    <input name="recipients" />
+                  </view>
+              </view>
+              <view class="relation">
+                 <view class="rel_text">联系电话</view>
+                  <view class="rel_inp">
+                    <input name="phone" />
+                  </view>
+              </view>
+              <view class="relation">
+                 <view class="rel_text">收货地址</view>
+                  <view class="rel_inp">
+                     <input name="address" />
+                  </view>
+              </view>
+            </view>
+            <view class="mas_but">
+                <button form-type="submit">确定</button>
+            </view>
+          </form>
+      </view>
+      <view class="sketch">
+          <view class="ske_tit">
+              自 行 张 贴 广 告 示 意 图
+          </view>
+          <view class="advert">
+              <image src="../images/shiyitu.png"></image>
+          </view>
+           <view class="attention">
+                <view class="att_tit">
+                    注意事项
+                </view>
+                <view class="att_text">
+                    1、自行车张贴广告，请保持刊面平整
+                </view>
+                <view class="att_text">
+                    2、车辆两侧车门都需要张贴建议大家
+                </view>
+                <view class="att_text">
+                 去张贴，有工作人员为大家张贴
+                </view>
+          </view>
+      </view>
+</view>
+
+
+
+

@@ -1,0 +1,25 @@
+<view class="con">
+  <view class='nav'>
+  <view class="img">
+  <image src="../images/about.png" mode="aspectFit"></image>
+  </view>
+  <view class="con_con">
+    <text>奇点云端</text>
+    <text>周期：60天 </text>
+    <text>酬金：500元</text>
+  </view>
+  <view class="con_left">投放中</view>
+</view>
+  <view class='nav'>
+  <view class="img">
+  <image src="../images/about.png" mode="aspectFit"></image>
+  </view>
+  <view class="con_con">
+    <text>奇点云端</text>
+    <text>周期：60天 </text>
+    <text>酬金：500元</text>
+  </view>
+  <view class="con_left">投放中</view>
+</view>
+
+</view>

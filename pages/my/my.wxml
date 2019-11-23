@@ -1,0 +1,42 @@
+<view class='my_nav'>
+    <view class=" nav_top nav_user" bindtap="gotouser">
+          <view>
+            <image src="../images/me.png" mode="aspectFit"></image>
+          </view>
+          <view>
+            <text>碉堡里的老九</text>
+            <text>专线用户</text>
+          </view>
+          <view>
+            <image src="../images/left.png"  mode="aspectFit"></image>
+          </view>
+    </view>
+    <view class="nav_top nav_money nav_text" bindtap="gotomaney">
+      <text>账户余额：80元</text>
+      <view class='nav_left'>
+            <image src="../images/left.png"  mode="aspectFit"></image>
+      </view>
+    </view>
+    <view class="nav_top nav_take nav_text" bindtap="gotorecord">
+         <text>张贴记录</text>
+      <view class='nav_left'>
+            <image src="../images/left.png"  mode="aspectFit"></image>
+      </view>
+    </view>
+    <view class="nav_top nav_about nav_text" bindtap="gotoabout">
+         <text>关于我们</text>
+      <view class='nav_left'>
+            <image src="../images/left.png"  mode="aspectFit"></image>
+      </view>
+    </view>
+</view>
+<view class="content">
+  <view>
+    <text>5  笔</text>
+    <text>指标完成量</text>
+  </view>
+   <view>
+    <text>18  笔</text>
+    <text>总指标</text>
+  </view>
+</view>

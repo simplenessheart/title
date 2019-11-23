@@ -1,0 +1,12 @@
+<view class="tel">
+  <text>手机号码：</text>
+  <input type="number" maxlength="11" ></input>
+</view>
+<view class="ma">
+  <text>验证码:</text>
+  <input></input>
+  <view>获取验证码</view>
+</view>
+<view class="footer">
+<button>保存</button>
+</view>

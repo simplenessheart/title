@@ -1,0 +1,54 @@
+<view class='top'>
+  <view class="top_con">
+    <text>个人信息</text>
+  </view>
+  
+  <view class="top_con top_name">
+    <text>昵称</text>
+    <input placeholder="请绑定用户的名字变量"></input>
+  </view>
+  <view class="top_con top_tel" bindtap="gototel">
+    <text>手机号码</text>
+    <text>19919910664</text>
+    <view>
+       <image src="../images/left.png"  mode="aspectFit"></image>
+    </view>
+  </view>
+</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="con">
+  <text>行程信息</text>
+</view>
+ <view class="user">
+        <image src="../images/wen.png"></image>
+        <text>里程用户</text>
+         <switch checked="{{switch1Checked}}" bindchange="switch1Change" color='#008CF8'/>
+    </view>
+<view class="con_two">
+    <view>居住地信息</view>
+    <view>居住地址</view>
+    <view>
+    <text>详细地址</text>
+       <input class="weui-input"  maxlength="10" placeholder="请输入详细地址" name="address"/>
+    </view>
+</view>
+<view class="con_two" wx:if="{{flag}}">
+    <view>行程A</view>
+    <view>居住地址</view>
+    <view>
+    <text>详细地址</text>
+        <input class="weui-input"  maxlength="10" placeholder="请输入详细地址" name="address2"/>
+    </view>
+</view>
+<view class="con_two" wx:if="{{flag}}">
+    <view>行程B</view>
+    <view>居住地址</view>
+    <view>
+    <text>详细地址</text>
+       <input class="weui-input"  maxlength="10" placeholder="请输入详细地址" name="address3"/>
+    </view>
+</view>
+<view class="footer">
+  <button form-type="submit">保存</button>
+</view>
+</form>

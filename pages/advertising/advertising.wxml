@@ -1,0 +1,99 @@
+<!--pages/advertising/advertising.wxml-->
+<view class="body">
+  <view class="s_box">
+    
+  </view>  
+  <view class="cont_1">
+  <view class="box" wx:if = "{{status !== 3}}">
+      <view class="pic_left">
+        <view class="radio">
+            <image src="../images/head.jpg" mode="aspectFit"></image>
+        </view>
+      </view>
+      <view class="text_right">
+          <view class="r_con">
+             <view class="text1">
+                奇点云端（北京）网络科技有限公司
+             </view>
+              <view class="text2">
+               有效期至：2019-05-11
+             </view>
+              <view class="text" wx:if="{{status == 1}}" style="display:block">
+                状态： 等待张贴上传
+             </view>
+              <view class="text" wx:elif="{{status == 2}}" style="display:block">
+                状态： 投放中
+             </view>
+          </view>
+      </view>
+  </view>
+  <view class="box2" wx:if = "{{status == 3}}" style="display:block">
+      <view class="press">
+         <text> 您还尚未领取广告刊面</text>
+      </view>
+      <view class="button" bindtap="draw">
+          现在去领取 
+      </view>
+  </view>
+  </view>
+  <view class="cont_2">
+      <view class="pic_1">
+          <image src="{{tempFilePaths}}" bindtap="gainLeft" mode="aspectFit"></image>
+          <view class="pic_text">
+              点击图片
+              <view>
+                上传车辆左侧张贴广告
+              </view>
+          </view>
+      </view>
+      <!-- <view class="pic_1">
+          <image src="../images/bb.jpg"></image>
+          <view class="pic_text">
+              点击图片
+              <view>
+                上传车辆后侧张贴广告
+              </view>
+          </view>
+      </view> -->
+      <view class="pic_1">
+          <image src="{{newPic}}" bindtap="gainRight" mode="aspectFit"></image>
+          <view class="pic_text">
+              点击图片
+              <view>
+                上传车辆右侧张贴广告
+              </view>
+          </view>
+      </view>
+  </view>
+  <view class="cont_3">
+      <view>
+         <text>
+            【专线用户】是按照一个周期18笔订单进行结算。专线用户出发和到达地点为固定地点。专线用户适合上下班的白领及固定路线的用户。
+         </text>
+      </view>
+      <view>
+         <text>
+            专线用户一个周期内需要上传18笔订单，方可结算。订单不进行累加，一个周期清算一次。
+         </text>
+      </view>
+      <view>
+         <text>
+            【结算方式】一个周期结束后结算一次。结算方式将在3～5个工作日将金额打入微信账户。
+         </text>
+      </view>
+      <view>
+      <text>
+       注：
+      </text>
+        <view>
+            1、一个周期指30个自然日；
+        </view>
+        <view>
+           2、计算日期从粘贴广告当天的第二天算起；
+        </view>
+        <view>
+            3、每个广告都有相对应的实效性。以实际为准。例如：【奇点云端】广告时效性为30天。则30天后，用户可自行处理粘贴的广告。如果超过广告时效用户继续上传订单或里程，系统将不再进行结算。
+        </view>
+      </view>
+  </view>
+</view>

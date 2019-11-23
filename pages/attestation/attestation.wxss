@@ -1,0 +1,127 @@
+.top{
+  width: 100%;
+}
+.top_con{
+  width:74%;
+  height: 70rpx;
+  margin: 10rpx auto;
+}
+.top_con>image{
+  width: 100%;
+  height: 56rpx;
+}
+.con_one{
+  width: 100%;
+  clear: left;
+}
+.con_one>view{
+  text-indent: 20rpx;
+  font-size: 24rpx;
+}
+.tel{
+  width: 100%;
+  height: 82rpx;
+  border-bottom: 1px #E8E9EB solid;
+  line-height: 82rpx;
+  margin-top: 40rpx;
+  font-weight: bold;
+}
+.tel_ma>text{
+  display: inline-block;
+  float: left;
+}
+.weui-input{
+  height: 82rpx;
+  float: left;
+  margin-left: 20rpx;
+  font-weight: normal;
+}
+.tel_ma{
+  width: 100%;
+  height: 82rpx;
+  border-bottom: 1px #E8E9EB solid;
+  line-height: 82rpx;
+}
+.tel_ma>view{
+  width: 170rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: #169BD5;
+  color: white;
+  font-size: 20rpx;
+  font-weight: normal;
+  float: left;
+  margin: 15rpx;
+  border-radius: 10rpx;
+  margin-left: 160rpx;
+  text-indent: 24rpx;
+}
+.user{
+  width: 100%;
+  height: 82rpx;
+  border-bottom: 1px #E8E9EB solid;
+  line-height: 82rpx;
+  text-indent: 0rpx;
+}
+.user>text{
+  margin-left: -11rpx;
+}
+.user>image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 25rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+.con_two{
+  width: 100%;
+}
+.con_two>view{
+  font-size: 24rpx;
+  text-indent: 20rpx;
+  line-height: 82rpx;
+}
+.con_two>view:nth-of-type(1){
+  border-bottom: 1px #ddd solid;
+  height: 82rpx;
+  line-height:90rpx; 
+  font-weight: bold;
+}
+.con_two>view:nth-of-type(2){
+  width: 96%;
+  height: 82rpx;
+  border-bottom: 1px #ddd solid;
+  margin-left: 20rpx;
+  text-indent: 0rpx;
+
+}
+.con_two>view:nth-of-type(3){
+  width: 100%;
+  height: 82rpx;
+  border-bottom: 1px #ddd solid;
+}
+.con_two>view>text{
+  display: inline-block;
+  float: left;
+}
+.con_two>view>input{
+  float: left;
+  height: 82rpx;
+}
+.footer{
+  width: 100%;
+  margin-top: 14rpx;
+}
+.footer>button{
+  width: 96%;
+  height: 88rpx;
+  line-height: 58rpx;
+  margin: 0 auto;
+  background-color: #00C261;
+  color: white;
+  font-size: 30rpx;
+}
+switch{
+  float: right;
+  margin-right: 30rpx;
+}
